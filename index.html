@@ -31,7 +31,7 @@ Flash or Find your device using next options:
 4. Connect to the MAIANA wifi and configure the wifi network to connect your device to.
 
 <p class="button-row" align="center">
-<esp-web-install-button manifest="https://raw.githubusercontent.com/marcelrv/MAIANA-WiFi/main/docu/manifest.json">
+<esp-web-install-button manifest="https://raw.githubusercontent.com/marcelrv/MAIANA-WiFi/main/docu/manifest.json">">
   <button slot="activate" class="md-button md-button--primary">INSTALL FULL</button>
   <span slot="unsupported">Use Chrome Desktop</span>
   <span slot="not-allowed">Not allowed to use this on HTTP!</span>
@@ -48,6 +48,22 @@ Flash or Find your device using next options:
   </p>
 Powered by [ESP Web Tools](https://esphome.github.io/esp-web-tools/){target=_blank}
 
+<h2>Alternative links (for testing)</h2>
+<p class="button-row" align="center">
+  <esp-web-install-button manifest="https://github.com/marcelrv/MAIANA-WiFi/main/docu/manifest.json?raw=true">">
+    <button slot="activate" class="md-button md-button--primary">INSTALL FULL</button>
+    <span slot="unsupported">Use Chrome Desktop</span>
+    <span slot="not-allowed">Not allowed to use this on HTTP!</span>
+    
+  </esp-web-install-button>
+  </p>
+  
+  <p class="button-row" align="center">
+      <span slot="unsupported">Use Chrome Desktop</span>
+      <span slot="not-allowed">Not allowed to use this on HTTP!</span>
+    </esp-web-install-button>
+    </p>
+
+
 <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
 </body></html>
-
