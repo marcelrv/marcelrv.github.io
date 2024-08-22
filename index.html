@@ -35,24 +35,26 @@
 
 <body>
   <h1>MAIANA<sup>&reg;</sup></h1>
-
   <div class="infobox" id="linkbuttons">
-
     <h3>WebFlasher</h3>
-    <br>
-    Flash or Find your device using next options:
-    <br>
-    <ol>
-      <li>Plug in your ESP32 to a USB port.</li>
-      <li>Hit "Install Full" for inital load (includes JFIFF files) or "Firmware only for firmware only update" and
-        select the correct COM port.</li>
-      <li>Get firmware installed and connected in less than 3 minutes!</li>
-      <li>Connect to the MAIANA wifi and configure the wifi network to connect your device to.</li>
-    </ol>
+    <div style="text-align: left;">
+      Flash or Find your device using next options:
+      <br>
+      <ol>
+        <li>Plug in your ESP32 to a USB port.</li>
+        <li>Hit "Install Full" for inital load (includes JFIFF files) or "Firmware only for firmware only update" and
+          select the correct COM port.</li>
+        <li>Get firmware installed and connected in less than 3 minutes!</li>
+        <li>Connect to the MAIANA wifi and configure the wifi network to connect your device to.</li>
+      </ol>
+      Note. The connect & log option in the webflasher is not supported by the MAIANA firmware. (due to the difference
+      in preset baudrate)
+    </div>
+
     <p class="button-row" align="center">
       <esp-web-install-button
         manifest="https://raw.githubusercontent.com/marcelrv/MAIANA-WiFi/main/docu/manifest.json">">
-        <button slot="activate" class="md-button md-button--primary">INSTALL FULL</button>
+        <button slot="activate" class="md-button md-button--primary">Install Full (firmware+web files)</button>
         <span slot="unsupported">Use Chrome Desktop</span>
         <span slot="not-allowed">Not allowed to use this on HTTP!</span>
 
@@ -68,11 +70,7 @@
       </esp-web-install-button>
     </p>
     Powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a>
-
   </div>
-
-
   <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
 </body>
-
 </html>
